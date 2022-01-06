@@ -1,11 +1,3 @@
-# React Query
-
-## fake server : json server
-
-- yarn add json-server
-- db.json 만들기
-
-```json
 {
   "user_model": [
     {
@@ -40,13 +32,3 @@
     }
   ]
 }
-```
-
-- package.json scripts add line
-  "server-json":"json-server --watch db.json --port 4002"
-- fake server run
-  yarn server-json
-
-## react-router-dom
-
-- yarn add react-router-dom
