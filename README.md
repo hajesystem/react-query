@@ -44,7 +44,7 @@
 
 - package.json scripts add line
   "server-json":"json-server --watch db.json --port 4002"
-- fake server run
+- fake server run\
   yarn server-json
 
 ## react-router-dom
