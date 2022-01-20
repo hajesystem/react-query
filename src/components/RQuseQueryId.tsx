@@ -1,7 +1,8 @@
-// 01. useQuery 이용하여 isLoading, data 사용
+// 08. Query by id main page
 import axios from 'axios';
 import React from 'react';
 import { useQuery } from 'react-query';
+import { Link } from 'react-router-dom';
 
 const fetchData = () => axios.get('http://localhost:4002/user_model');
 
@@ -12,8 +13,7 @@ type DataType = {
   name: string;
 };
 
-function RQuseQuery() {
-  // useQuery('unique queryKey', callback funtion)
+function RQuseQueryId() {
   const { isLoading, data } = useQuery('useQuery', fetchData);
 
   if (isLoading) {
@@ -21,12 +21,14 @@ function RQuseQuery() {
   }
   return (
     <>
-      <h2>useQuery Users List</h2>
+      <h2>useQuery Query id Users List</h2>
       {data?.data.map((user: DataType) => (
-        <div key={user.id}>{user.user}</div>
+        <div key={user.id}>
+          <Link to={`/useQueryId/${user.id}`}>{user.name}</Link>
+        </div>
       ))}
     </>
   );
 }
 
-export default RQuseQuery;
+export default RQuseQueryId;

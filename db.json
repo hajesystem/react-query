@@ -26,9 +26,23 @@
     },
     {
       "id": 5,
-      "user": "test4",
+      "user": "test5",
       "password": "password5",
       "name": "테스트5"
+    }
+  ],
+  "product_model": [
+    {
+      "id": 1,
+      "name": "컴퓨터"
+    },
+    {
+      "id": 2,
+      "name": "일렉락"
+    },
+    {
+      "id": 3,
+      "name": "잉크존"
     }
   ]
 }
